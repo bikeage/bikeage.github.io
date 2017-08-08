@@ -36,9 +36,9 @@
   <![endif]-->
 
 
-    <link href="./KNN.html" rel="canonical" />
+    <link href="./kNN.html" rel="canonical" />
 
-        <meta name="description" content="Short version for index and feeds">
+        <meta name="description" content="K Nearest Neighbors">
 
         <meta name="author" content="Eliot Logan">
 
@@ -51,12 +51,12 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="skewed"/>
 <meta property="og:title" content="K Nearest Neighbors"/>
-<meta property="og:description" content="Short version for index and feeds"/>
+<meta property="og:description" content="K Nearest Neighbors"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="./KNN.html"/>
+<meta property="og:url" content="./kNN.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2017-08-05 11:33:00-07:00"/>
-<meta property="article:modified_time" content="2017-08-04 04:33:00-07:00"/>
+<meta property="article:published_time" content="2017-08-08 10:33:00-07:00"/>
+<meta property="article:modified_time" content="2017-08-08 10:33:00-07:00"/>
 <meta property="article:author" content="./author/eliot-logan.html">
   <meta property="article:publisher" content="http://facebook.com/eliotlogan" />
 <meta property="article:section" content="Python"/>
@@ -68,11 +68,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@eliotlogan">
     <meta name="twitter:title" content="K Nearest Neighbors">
-    <meta name="twitter:url" content="./KNN.html">
+    <meta name="twitter:url" content="./kNN.html">
 
         <meta name="twitter:image:src" content="./images/my_image.png">
 
-      <meta name="twitter:description" content="Short version for index and feeds">
+      <meta name="twitter:description" content="K Nearest Neighbors">
 
 <script type="application/ld+json">
 {
@@ -80,16 +80,16 @@
   "@type": "Article",
   "name": "K Nearest Neighbors",
   "headline": "K Nearest Neighbors",
-  "datePublished": "2017-08-05 11:33:00-07:00",
-  "dateModified": "2017-08-04 04:33:00-07:00",
+  "datePublished": "2017-08-08 10:33:00-07:00",
+  "dateModified": "2017-08-08 10:33:00-07:00",
   "author": {
     "@type": "Person",
     "name": "Eliot Logan",
     "url": "./author/eliot-logan.html"
   },
   "image": "./images/my_image.png",
-  "url": "./KNN.html",
-  "description": "Short version for index and feeds"
+  "url": "./kNN.html",
+  "description": "K Nearest Neighbors"
 }
 </script>
 </head>
@@ -127,10 +127,10 @@
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="./author/eliot-logan.html">Eliot Logan</a>
-            | <time datetime="Sat 05 August 2017">Sat 05 August 2017</time>
+            | <time datetime="Tue 08 August 2017">Tue 08 August 2017</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on Fri 04 August 2017</span>
+            <span class="post-meta"> | Updated on Tue 08 August 2017</span>
             <div class="post-cover cover" style="background-image: url('./images/my_image.png')">
       </div>
     </header>
@@ -143,21 +143,25 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <p>K nearest Neighgors is a straight forward classification algorithm. Essentiall</p>
-<p>This is a supervised learning technique. The model can be trained on labeled date before making predictions on unseen data points. .  </p>
-<p>One consideration that mus be made is determining the value of K. </p>
-<p>Lets walk through an example. in this case we  </p>
+                <h1>K Nearest Neighbors</h1>
+<p>K nearest Neighbors is a relatively straight forward machine learning algorithm. It can be used as a classifier or regressor. It holds that the value of a data point is the average of it's K nearest neighbors.</p>
+<p>This is a supervised learning technique. The model can be trained on labeled data before making predictions on unseen data points.</p>
+<h2>Decisions</h2>
+<p>Determining the Value of K</p>
+<p>One consideration that must be made is determining the value of K. Theoretically, K could be set as low as 1, or as high as n. If we think about that for a moment it doesn't really work. K of 1 would not involve any of its neighbors, and in fact doesn't provide any predictive value at all. On the other extreme, if we chose n, then all the data points will be classified as the majority. The best approach would be just select a starting point, and  optimize through cross validation.</p>
+<h2>Addressing Dimensionality</h2>
+<p>KNN does suffer the curse of Dimensionality. As the number of dimensions increases the nearest nearest neighbor becomes further away. Often times, dimensionality reduction needs to be applied before kNN can be applied.</p>
             </section>
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=K Nearest Neighbors&amp;url=./KNN.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=K Nearest Neighbors&amp;url=./kNN.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./KNN.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=./kNN.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=./KNN.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=./kNN.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
